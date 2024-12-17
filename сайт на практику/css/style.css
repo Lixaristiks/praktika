@@ -1,0 +1,365 @@
+:root {
+    --black-color: #1A1A1A;
+    --white-color: #E8E8E8;
+    --purple-color: #4C34B9;
+    --blue-color: #2753E1;
+}
+body {
+    background-color: var(--white-color);
+}
+body, a, p {
+    color: var(--white-color);
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+}
+section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Кнопки градиентные */
+
+.sign-btns {
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 14px 18px;
+    background: rgb(76,52,185);
+    background: linear-gradient(90deg, rgba(76,52,185,1) 0%, rgba(39,83,225,1) 100%);
+}
+
+/* MAIN */
+
+main {
+    margin-top: 100px;
+}
+.main-block {
+    width: 100%;
+    padding: 0 70px;
+    border-radius: 15px;
+    background-color: var(--black-color);
+    justify-content: space-between;
+}
+.main-content {
+    margin-top: 70px;
+}
+.main-content p {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+.main-content a {
+    font-size: 45px;
+    padding: 20px 70px;
+}
+.main-man {
+    position: relative;
+    width: 425px;
+    height: 425px;
+}
+.main-man img {
+    position: absolute;
+    top: -100px;
+    width: 414px;
+    height: 524px;
+}
+.main-man div {
+    width: 415px;
+    height: 425px;
+    border-radius: 500px 500px 0 0;
+    background-color: var(--white-color);
+}
+
+/* TWO REK BLOCKS */
+
+.rek-block {
+    position: relative;
+    width: 715px;
+    height: 198px;
+    margin-right: 10px;
+}
+.rek-block:last-of-type {
+    margin-right: 0;
+}
+.rek-block p:first-of-type {
+    font-size: 35px;
+    font-weight: 500;
+    position: absolute;
+    top: 62px;
+    left: 80px;
+    z-index: 1000;
+}
+.rek-block p:last-of-type {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 108px;
+    left: 80px;
+    z-index: 1000;
+}
+.rek-block img {
+    transition: 0.3s;
+}
+.rek-block img:hover {
+    filter: grayscale(0.7);
+    transition: 0.42s;
+}
+
+/* SLIDER */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+.slider-wrapper {
+    overflow: hidden;
+    width: 1440px;
+}
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+.card {
+    padding: 23px 30px;
+    flex: 0 0 353px;
+    height: 254px;
+    margin: 0 5px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background 0.3s;
+}  
+.card:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}  
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 45px;
+    font-weight: 500;
+}  
+.card p {
+    align-items: baseline;
+    font-size: 20px;
+}  
+.slider-button {
+    width: 171px;
+    height: 254px;
+    background-color: var(--black-color);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}  
+.slider-button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}  
+.slider-button svg {
+    fill: #fff;
+}
+
+/* SERVICES */
+
+.ser-cards h1 {
+    color: var(--black-color);
+    font-size: 50px;
+}
+.cards-content {
+    margin-top: 82px;
+}
+.cards-content .ser-card:first-of-type {
+    margin-right: 10px;
+}
+.ser-card {
+    width: 715px;
+    padding: 72px 79px;
+    border-radius: 15px;
+    background-color: var(--black-color);
+}
+.ser-card h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 25px;
+}
+.card-inf {
+    padding: 17px 25px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    margin-bottom: 30px;
+}
+.card-inf p {
+    color: var(--black-color);
+}
+.card-inf p:first-of-type {
+    font-size: 30px;
+}
+.card-inf p:last-of-type {
+    font-size: 15px;
+}
+.img-soc {
+    margin-top: 10px;
+}
+.img-soc img {
+    margin-right: 10px;
+}
+.cnumber {
+    margin-bottom: 26px;
+}
+.cnumber p {
+    font-weight: 600;
+    font-size: 25px;
+}
+.cnumber p:last-of-type {
+    font-weight: 400;
+    font-size: 15px;
+}
+.hnumber {
+    margin-bottom: 70px;
+}
+.hnumber p {
+    font-weight: 600;
+    font-size: 25px;
+}
+.hnumber p:last-of-type {
+    font-weight: 400;
+    font-size: 15px;
+}
+.by-btns {
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 24px 29px;
+    background: rgb(76,52,185);
+    background: linear-gradient(90deg, rgba(76,52,185,1) 0%, rgba(39,83,225,1) 100%);
+}
+
+/* SIGN */
+
+.sign-win {
+    width: 533px;
+    margin: 140px auto 0 auto;
+    padding: 78px;
+    border-radius: 15px;
+    background-color: var(--black-color);
+}
+.sign-win h1 {
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+.number-input {
+    border-bottom: 1px var(--white-color) solid;
+}
+.number-input p {
+    color: #A1A1A1;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.number-input label {
+    font-weight: 600;
+    font-size: 37px;
+}
+.input-number-pole input {
+    width: 240px;
+    font-size: 35px;
+    margin-left: 20px;
+}
+.sign-text-phone {
+    width: 100%;
+    margin-top: 40px;
+    padding: 17px 11px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    color: var(--black-color);
+}
+.sign-btn-sign {
+    width: 100%;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: rgb(76,52,185);
+    background: linear-gradient(90deg, rgba(76,52,185,1) 0%, rgba(39,83,225,1) 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* MEDIA */
+
+@media (max-width: 1500px) {
+    .container {
+        max-width: 928px;
+    }
+
+    main {
+        background-color: var(--black-color);
+    }
+    .main-block {
+        padding: 0;
+    }
+    .main-content p {
+        font-size: 40px;
+    }
+    .main-man {
+        height: 375px;
+    }
+    .main-man img {
+        width: 375px;
+        height: 475px;
+    }
+    .main-man div {
+        width: 375px;
+        height: 385px;
+    }
+
+    .rek-block {
+        width: 452px;
+        height: 114px;
+        margin-right: 20px;
+    }
+    .rek-block p:first-of-type {
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        top: 45px;
+        left: 46px;
+        z-index: 1000;
+    }
+    .rek-block p:last-of-type {
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        top: 72px;
+        left: 46px;
+        z-index: 1000;
+    }
+
+    .ser-card {
+        width: 100%;
+    }
+    .cards-content .ser-card:first-of-type {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+

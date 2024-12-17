@@ -1,0 +1,36 @@
+header {
+    background-color: var(--black-color);
+}
+.top-header {
+    padding: 8px 0;
+    align-items: center;
+}
+.top-header img {
+    margin-right: 16px;
+}
+.header-content {
+    justify-content: space-between;
+    padding: 16px 0 26px;
+}
+.h-nav-content img {
+    margin-right: 88px;
+}
+nav a {
+    margin-right: 26px;
+}
+nav a:last-of-type {
+    margin-right: 0;
+}
+.head-btn a {
+    margin-right: 26px;
+}
+.head-btn a:last-of-type {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
